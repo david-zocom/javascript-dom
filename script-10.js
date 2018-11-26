@@ -13,7 +13,7 @@ function whenLoaded() {
 	// Leta upp elementet i DOM
 	let div = document.getElementById('changeMe');
 	// Skriv ut värdet på variabeln, för att se så den inte är NULL
-	console.log('Div har värdet: ' + div);
+	console.log('10.1: Div har värdet: ' + div);
 	// Ändra innehållet i elementet
 	div.innerHTML = 'Jag är ändrad!';
 
@@ -32,4 +32,46 @@ function whenLoaded() {
 		olList.style.color = 'tomato';
 		olList.style.backgroundColor = 'black';
 	})
+
+
+	// 10.3
+	let icecreamButton = document.getElementById('changeIcecreamButton');
+	icecreamButton.addEventListener('click', icecreamWhenClick);
+
+
 }
+let icecreamState = false;
+function icecreamWhenClick(event) {
+	// Leta upp div-element med en viss klass
+	let divs = document.getElementsByClassName('icecream');
+	divs = [...divs];  // gör om till vanlig lista, som kan forEach
+	console.log('10.3: Icecream divs: ' + divs);
+	divs.forEach(d => {
+		const alternativeFlavor = 'tomato';
+		if (icecreamState) {
+			d.innerHTML = 'pistage';
+		} else {
+			d.innerHTML = alternativeFlavor;
+		}
+		icecreamState = !icecreamState;
+	});
+	// let divs = document.getElementsByClassName('icecream');
+	// console.log('10.3: Icecream divs: ' + divs);
+	// for( let i=0; i<divs.length; i++ ) {
+	// 	if (divs[i].innerHTML == 'tomato') {
+	// 		divs[i].innerHTML = 'pistage';
+	// 	} else {
+	// 		divs[i].innerHTML = 'tomato';
+	// 	}
+	// }
+}
+
+
+
+
+
+
+
+
+
+//

@@ -1,6 +1,6 @@
 
 body {
-background-color:gray;
+background-color: lightgray;
 }
 
 h1 {
@@ -20,4 +20,14 @@ p {
 	display:inline-block;
 	transition: 1s ease;
 	border:1px solid lightblue;
+	/* transform: rotate(20deg); */
+
+}
+#olList {
+	/* transform: rotate(20deg); */
+}
+
+.nisse {
+	height:150px;
+	width:150px;
 }

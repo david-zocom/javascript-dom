@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>10. Exercises on DOM manipulation</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="script-10.js"></script>
 </head>
 <body>
 	<h1>Övningar i DOM-manipulation</h1>
@@ -23,24 +24,19 @@
 			first!
 		</li>
 	</ol>
-onclick ==
 
-	<script>
-		console.log('Lägg din JavaScript i HEAD');
-		// 10.2
-		let addLiButton = document.querySelector('#addLiButton');
-		let olList = document.querySelector('#olList');
-		addLiButton.addEventListener('click', event => {
-			let newLi = document.createElement('li');
-			newLi.innerText = 'snart lunch!';
-			olList.appendChild(newLi);
-		})
+	<p>
+		onclick == false 💖
+	</p>
 
-		// 10.1
-		let div = document.getElementById('changeMe');
-		console.log('Div har värdet: ' + div);
-		div.innerHTML = 'Jag är ändrad!';
-	</script>
+	<div id="nisse"> Nisses div </div>
+
+	<div class="icecream"> pistage </div>
+	<div class="icecream"> choklad </div>
+	<div class="icecream"> citronsorbet </div>
+	<button id="changeIcecreamButton">Ändra smak!</button>
+
+
 
 
 
