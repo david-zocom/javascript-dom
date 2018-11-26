@@ -1,3 +1,8 @@
+
+body {
+background-color:gray;
+}
+
 h1 {
 	font-size: 2em;
 	color: tomato;
@@ -8,4 +13,11 @@ div {
 	padding: 4px;
 	margin-top: 4px;
 	margin-bottom: 4px;
+	border-radius: 20px;
+	background-color:lightblue;
+}
+p {
+	display:inline-block;
+	transition: 1s ease;
+	border:1px solid lightblue;
 }

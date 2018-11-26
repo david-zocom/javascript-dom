@@ -4,19 +4,45 @@
 	<meta charset="utf-8">
 	<title>10. Exercises on DOM manipulation</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script>
-		console.log('Lägg din JavaScript i HEAD');
-	</script>
 </head>
 <body>
 	<h1>Övningar i DOM-manipulation</h1>
 
-	<div>
+	<p>Don't Panic!</p>
+	<div id="changeMe">
 		hallå
 	</div>
 
 	<p>
 		En del har JavaScript sist i &lt;body&gt;. Det är inte rekommenderat.
 	</p>
+
+	<button id="addLiButton">Lägg till list item</button>
+	<ol id="olList">
+		<li>
+			first!
+		</li>
+	</ol>
+onclick ==
+
+	<script>
+		console.log('Lägg din JavaScript i HEAD');
+		// 10.2
+		let addLiButton = document.querySelector('#addLiButton');
+		let olList = document.querySelector('#olList');
+		addLiButton.addEventListener('click', event => {
+			let newLi = document.createElement('li');
+			newLi.innerText = 'snart lunch!';
+			olList.appendChild(newLi);
+		})
+
+		// 10.1
+		let div = document.getElementById('changeMe');
+		console.log('Div har värdet: ' + div);
+		div.innerHTML = 'Jag är ändrad!';
+	</script>
+
+
+
 </body>
 </html>
