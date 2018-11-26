@@ -1,0 +1,11 @@
+h1 {
+	font-size: 2em;
+	color: tomato;
+}
+div {
+	border: 1px solid gray;
+	border-radius: 2px;
+	padding: 4px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
