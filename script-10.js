@@ -37,9 +37,9 @@ function whenLoaded() {
 	// 10.3
 	let icecreamButton = document.getElementById('changeIcecreamButton');
 	icecreamButton.addEventListener('click', icecreamWhenClick);
+}  // whenLoaded
 
 
-}
 let icecreamState = false;
 function icecreamWhenClick(event) {
 	// Leta upp div-element med en viss klass
@@ -57,7 +57,7 @@ function icecreamWhenClick(event) {
 	});
 	// let divs = document.getElementsByClassName('icecream');
 	// console.log('10.3: Icecream divs: ' + divs);
-	// for( let i=0; i<divs.length; i++ ) {
+	// for( let i=0; i<ii; i++ ) {
 	// 	if (divs[i].innerHTML == 'tomato') {
 	// 		divs[i].innerHTML = 'pistage';
 	// 	} else {
