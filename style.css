@@ -1,10 +1,11 @@
 
 body {
-	background-color: Plum;
+	/* background-color: Orchid; */
 }
 /* * {
 	border-radius: 50% !important;
 } */
+/**:hover { transform: rotate(180deg); }*/
 
 h1 {
 	font-size: 2em;
@@ -17,11 +18,11 @@ div {
 	margin-top: 4px;
 	margin-bottom: 4px;
 	border-radius: 20px;
-	background-color:lightblue;
+	 background-color:lightblue;
 }
 p {
 	display:inline-block;
-	transition: 1s ease;
+	/* transition: 1s ease; */
 	border:1px solid lightblue;
 	/* transform: rotate(20deg); */
 
@@ -33,20 +34,20 @@ p {
 .nisse {
 	height:150px;
 	width:150px;
-	transition:1s ease;
+	/* transition:1s ease; */
 	padding:20px;
 }
 
 .on {
 	height:100px;
 	width:100px;
-	transition:1s ease;
+	/* transition:1s ease; */
 	padding:20px;
 	border-radius:50% 50% 100% 17%;
 	background-color:tomato;
 	font-size:20px;
 	color:lightblue;
-	animation: hej 5s linear 2s infinite alternate;
+	/* animation: hej 5s linear 2s infinite alternate; */
 }
 
 
@@ -55,9 +56,9 @@ p {
 .off {
 	height:200px;
 	width:200px;
-	transition:1s ease;
+	/* transition:1s ease; */
 	padding:30px;
-	animation: hej 5s linear 2s infinite alternate;
+	/* animation: hej 5s linear 2s infinite alternate; */
 	border-radius:50%;
 
 
@@ -71,12 +72,12 @@ p {
 	right: 0px;
 
 }
-@keyframes hej {
+/* @keyframes hej {
     0%   {background-color: red; Padding:0; font-size:30px;}
     25%  {background-color: yellow; margin:5px;}
     50%  {background-color: blue; border-radius:10px;}
     100% {background-color: green; transform: rotate(20deg); width:200px;}
-}
+} */
 
 
 #myButton {
@@ -91,6 +92,40 @@ p {
 	width: 300px;
 	height: 200px;
 	padding: 0.5em;
+}
+
+
+input {
+	font-size: 1em;
+	/* border-width: 14px; */
+	border-radius:10px;
+	/* transition:0.1s ease; */
+
+}
+
+input:hover {
+	/* background-color:olive; */
+	padding:5px;
+	/* transform: rotate(2deg); */
+
+}
+
+select {
+	border-radius:100%;
+	/* opacity: 0.5; */
+	/* transform: rotate(180deg); */
+	font-size: 1.5em;
+
+}
+select:hover {
+	padding:10px;
+	/* transform: rotate(3deg); */
+
+}
+
+#validation {
+	color: red;
+	font-weight: bold;
 }
 
 
