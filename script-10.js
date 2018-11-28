@@ -37,8 +37,24 @@ function whenLoaded() {
 	// 10.3
 	let icecreamButton = document.getElementById('changeIcecreamButton');
 	icecreamButton.addEventListener('click', icecreamWhenClick);
+
+
+	// 10.4
+	let toggleButton = document.querySelector('#toggleButton');
+	toggleButton.addEventListener('click', toggleFunction);
+
 }  // whenLoaded
 
+
+function toggleFunction(event) {
+	console.log('Toggle function called');
+	let toggleButton = document.querySelector('#toggleButton');
+	if( toggleButton.className === 'on' ) {
+		toggleButton.className = 'off';
+	} else {
+		toggleButton.className = 'on';
+	}
+}
 
 let icecreamState = false;
 function icecreamWhenClick(event) {

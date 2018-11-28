@@ -1,6 +1,9 @@
 
 body {
-background-color: lightgray;
+	background-color: lightgray;
+}
+* {
+	border-radius: 50% !important;
 }
 
 h1 {
@@ -30,4 +33,52 @@ p {
 .nisse {
 	height:150px;
 	width:150px;
+	transition:1s ease;
+	padding:20px;
 }
+
+.on {
+	height:100px;
+	width:100px;
+	transition:1s ease;
+	padding:20px;
+	border-radius:50% 50% 100% 17%;
+	background-color:tomato;
+	font-size:20px;
+	color:lightblue;
+	animation: hej 5s linear 2s infinite alternate;
+}
+
+
+
+
+.off {
+	height:200px;
+	width:200px;
+	transition:10s ease;
+	padding:30px;
+	animation: hej 5s linear 2s infinite alternate;
+	border-radius:50%;
+
+
+}
+.toggleDiv {
+	position: relative;
+	height: 20em;
+}
+.on, .off {
+	position: absolute;
+	right: 0px;
+
+}
+@keyframes hej {
+    0%   {background-color: red; Padding:0; font-size:30px;}
+    25%  {background-color: yellow; margin:5px;}
+    50%  {background-color: blue; border-radius:10px;}
+    100% {background-color: green; transform: rotate(20deg); width:200px;}
+}
+
+
+
+
+/*  */
