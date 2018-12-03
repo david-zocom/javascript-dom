@@ -3,12 +3,14 @@
 const state = {};
 
 window.addEventListener('load', whenLoaded);
+window.addEventListener('load', printEventInfo);
 
 
 function whenLoaded(event) {
 	console.log('Alla HTML-element har laddats in i DOM-trädet');
 
 	ex1();
+	ex2();
 }  // whenLoaded
 
 
@@ -17,8 +19,14 @@ function ex1() {
 	elementToChangeContent[0].innerHTML = 'Övning 1 löst!';
 }
 function ex2() {
-	// 2 Skapa en HTML-sida med en button och ett div-element. Skapa en funktion som ska användas för att prenumerera på events. När funktionen anropas ska du skriva ut event.type och event.target till div-elementet. Samma funktion ska prenumerera både på sidans load-event och knappens klick-event.
+	let button = document.querySelector('.exercise2 > button');
+	button.addEventListener('click', printEventInfo);
 }
+function printEventInfo(event) {
+	let output = document.querySelector('#output');
+	output.innerHTML = `Event-objektet har type=${event.type} och target=${event.target}. `;
+}
+
 function ex3() {}
 
 /*
