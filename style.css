@@ -1,31 +1,48 @@
 
 body {
-	/* background-color: Orchid; */
+	/* background-image: url("https://66.media.tumblr.com/09645a206c1986ad5e89f5993ed8be24/tumblr_inline_n9db8wrXYD1s2hg91.jpg"); */
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font-family: "Comic Sans MS" !important;
+  background-color: snow;
+	color: hotpink;
 }
 /* * {
 	border-radius: 50% !important;
 } */
-/**:hover { transform: rotate(180deg); }*/
+/* *:hover { transform: rotate(365deg); } */
 
 h1 {
 	font-size: 2em;
 	color: tomato;
 }
+
+
+@keyframes blink {
+   50% { border-color: #ff0000; }
+  25% { border-color: #f0ff00; }
+}
 div {
-	border: 1px solid gray;
+	border: 10px solid gray;
 	border-radius: 2px;
 	padding: 4px;
 	margin-top: 4px;
 	margin-bottom: 4px;
 	border-radius: 20px;
-	 background-color:lightblue;
+	background-color:lightblue;
+	animation-name: blink ;
+
+
+  animation-duration: 1s ;
+  animation-timing-function: step-end ;
+  animation-iteration-count: infinite ;
+  animation-direction: alternate ;
 }
 p {
 	/* display:inline-block; */
-	/* transition: 1s ease; */
+	transition: 10s ease;
 	border:1px solid lightblue;
-	/* transform: rotate(20deg); */
-
+	transform: rotate(180deg);
 }
 #olList {
 	/* transform: rotate(20deg); */
@@ -49,9 +66,14 @@ p {
 	color:lightblue;
 	/* animation: hej 5s linear 2s infinite alternate; */
 }
+body * {
+	text-align: center;
+}
 
-
-
+ul, ol {
+/*	font-size: 4rem */
+	color: #fff;
+}
 
 .off {
 	height:200px;
@@ -72,13 +94,10 @@ p {
 	right: 0px;
 
 }
-/* @keyframes hej {
-    0%   {background-color: red; Padding:0; font-size:30px;}
-    25%  {background-color: yellow; margin:5px;}
-    50%  {background-color: blue; border-radius:10px;}
-    100% {background-color: green; transform: rotate(20deg); width:200px;}
-} */
-
+.till-pepparkakor:last-child {
+	font-size: 1rem;
+	color: black;
+}
 
 #myButton {
 	background-color: MistyRose;
@@ -129,5 +148,36 @@ select:hover {
 }
 
 
+#clickButton {
+}
 
-/*  */
+/*- -100 sekunder? -*/
+/*
+@keyframes orimligt {
+    from { transform : translateX(100%); }
+    17%  { transform : translateX(-10%); }
+    20%  { transform : translateX(-20%); background-color:#CC231E
+
+;}
+    37%  { transform : translateX(-30%); }
+    40%  { transform : translateX(-40%);padding:100px; }
+    57%  { transform : translateX(-50%);font-size:20px; }
+    60%  { transform : translateX(-60%); }
+    77%  { transform : translateX(-70%); }
+    80%  { transform : translateX(-80%); }
+    97%  { transform : translateX(-90%); }
+    to   { transform : translateX(-100%); }
+} */
+/* https://codepen.io/adamlindqvist/pen/EaPeJg  */
+
+
+.pepparkaksdiv {
+	background-color: #CC231E;
+
+}
+
+
+.till-pepparkakor {
+	display:none;
+
+}
