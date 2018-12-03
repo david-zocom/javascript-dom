@@ -21,7 +21,7 @@ div {
 	 background-color:lightblue;
 }
 p {
-	display:inline-block;
+	/* display:inline-block; */
 	/* transition: 1s ease; */
 	border:1px solid lightblue;
 	/* transform: rotate(20deg); */

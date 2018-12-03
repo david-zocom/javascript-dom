@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>11. Exercises on browser events</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="script-11.js"></script>
+</head>
+<body>
+	<h1>Övningar på events</h1>
+	<p>Don't panic!</p>
+
+	<p class="exercise1">
+		1 Skapa en funktion som körs när HTML-dokumentet har laddats klart. Funktionen ska ändra textinnehåll på ett valfritt element på webbsidan. Du ska använda eventet load.
+	</p>
+	<p>
+		2 Skapa en HTML-sida med en button och ett div-element. Skapa en funktion som ska användas för att prenumerera på events. När funktionen anropas ska du skriva ut event.type och event.target till div-elementet. Samma funktion ska prenumerera både på sidans load-event och knappens klick-event.
+	</p>
+
+	<p>
+		3a Gör en sida med två knappar. På den ena ska det stå "+1" och på den andra "-1". Sidan ska också visa ett tal. När man klickar på +1 respektive -1 ska talet ändras. Talet ska finnas i en global variabel som heter counterState.
+		3b Gör en sida med två knappar. På den ena ska det stå "Start" och på den andra "Stopp". Stopp-knappen ska vara inaktiverad, använd element.disabled=true
+		När man klickar på Start ska start-knappen inaktiveras och stopp-knappen aktiveras. När man klickar på Stopp ska det bli tvärtom
+	</p>
+
+	<div id="hejsan">
+
+	</div>
+
+
+</body>
+</html>
