@@ -42,7 +42,6 @@ p {
 	/* display:inline-block; */
 	transition: 10s ease;
 	border:1px solid lightblue;
-	transform: rotate(180deg);
 }
 #olList {
 	/* transform: rotate(20deg); */
@@ -66,9 +65,7 @@ p {
 	color:lightblue;
 	/* animation: hej 5s linear 2s infinite alternate; */
 }
-body * {
-	text-align: center;
-}
+
 
 ul, ol {
 /*	font-size: 4rem */
