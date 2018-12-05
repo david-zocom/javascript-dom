@@ -1,28 +1,31 @@
-
 body {
-	/* background-image: url("https://66.media.tumblr.com/09645a206c1986ad5e89f5993ed8be24/tumblr_inline_n9db8wrXYD1s2hg91.jpg"); */
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	font-family: "Comic Sans MS" !important;
+  /* background-image: url("https://66.media.tumblr.com/09645a206c1986ad5e89f5993ed8be24/tumblr_inline_n9db8wrXYD1s2hg91.jpg"); */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-color: snow;
-	color: hotpink;
+  color: hotpink;
 }
+
 /* * {
 	border-radius: 50% !important;
 } */
 /* *:hover { transform: rotate(365deg); } */
-
 h1 {
-	font-size: 2em;
-	color: tomato;
+  font-size: 2em;
+  color: tomato;
 }
-
 
 @keyframes blink {
-   50% { border-color: #ff0000; }
-  25% { border-color: #f0ff00; }
+  50% {
+    border-color: #ff0000;
+  }
+
+  25% {
+    border-color: #f0ff00;
+  }
 }
-div {
+
+/* div {
 	border: 10px solid gray;
 	border-radius: 2px;
 	padding: 4px;
@@ -30,123 +33,110 @@ div {
 	margin-bottom: 4px;
 	border-radius: 20px;
 	background-color:lightblue;
-	animation-name: blink ;
-
-
-  animation-duration: 1s ;
-  animation-timing-function: step-end ;
-  animation-iteration-count: infinite ;
-  animation-direction: alternate ;
-}
+} */
 p {
-	/* display:inline-block; */
-	transition: 10s ease;
-	border:1px solid lightblue;
+  /* display:inline-block; */
+  /* transition: 10s ease; */
+  border: 1px solid lightblue;
 }
+
 #olList {
-	/* transform: rotate(20deg); */
+  /* transform: rotate(20deg); */
 }
 
 .nisse {
-	height:150px;
-	width:150px;
-	/* transition:1s ease; */
-	padding:20px;
+  height: 150px;
+  width: 150px;
+  /* transition:1s ease; */
+  padding: 20px;
 }
 
 .on {
-	height:100px;
-	width:100px;
-	/* transition:1s ease; */
-	padding:20px;
-	border-radius:50% 50% 100% 17%;
-	background-color:tomato;
-	font-size:20px;
-	color:lightblue;
-	/* animation: hej 5s linear 2s infinite alternate; */
+  height: 100px;
+  width: 100px;
+  /* transition:1s ease; */
+  padding: 20px;
+  border-radius: 50% 50% 100% 17%;
+  background-color: tomato;
+  font-size: 20px;
+  color: lightblue;
+  /* animation: hej 5s linear 2s infinite alternate; */
 }
 
-
 ul, ol {
-/*	font-size: 4rem */
-	color: #fff;
+  /*	font-size: 4rem */
+  color: #fff;
 }
 
 .off {
-	height:200px;
-	width:200px;
-	/* transition:1s ease; */
-	padding:30px;
-	/* animation: hej 5s linear 2s infinite alternate; */
-	border-radius:50%;
-
-
+  height: 200px;
+  width: 200px;
+  /* transition:1s ease; */
+  padding: 30px;
+  /* animation: hej 5s linear 2s infinite alternate; */
+  border-radius: 50%;
 }
+
 .toggleDiv {
-	position: relative;
-	height: 20em;
+  position: relative;
+  height: 20em;
 }
-.on, .off {
-	position: absolute;
-	right: 0px;
 
+.on, .off {
+  position: absolute;
+  right: 0px;
 }
+
 .till-pepparkakor:last-child {
-	font-size: 1rem;
-	color: black;
+  font-size: 1rem;
+  color: black;
 }
 
 #myButton {
-	background-color: MistyRose;
-	padding: 1em;
-	font-size: 2em;
-	color: Fuchsia;
+  background-color: MistyRose;
+  padding: 1em;
+  font-size: 2em;
+  color: Fuchsia;
 }
 
 #mouseEvents {
-	background-color: lightblue;
-	width: 300px;
-	height: 200px;
-	padding: 0.5em;
+  background-color: lightblue;
+  width: 300px;
+  height: 200px;
+  padding: 0.5em;
 }
 
-
 input {
-	font-size: 1em;
-	/* border-width: 14px; */
-	border-radius:10px;
-	/* transition:0.1s ease; */
-
+  font-size: 1em;
+  /* border-width: 14px; */
+  border-radius: 10px;
+  /* transition:0.1s ease; */
 }
 
 input:hover {
-	/* background-color:olive; */
-	padding:5px;
-	/* transform: rotate(2deg); */
-
+  /* background-color:olive; */
+  padding: 5px;
+  /* transform: rotate(2deg); */
 }
 
 select {
-	border-radius:100%;
-	/* opacity: 0.5; */
-	/* transform: rotate(180deg); */
-	font-size: 1.5em;
-
+  border-radius: 100%;
+  /* opacity: 0.5; */
+  /* transform: rotate(180deg); */
+  font-size: 1.5em;
 }
-select:hover {
-	padding:10px;
-	/* transform: rotate(3deg); */
 
+select:hover {
+  padding: 10px;
+  /* transform: rotate(3deg); */
 }
 
 #validation {
-	color: red;
-	font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
 
-
-#clickButton {
-}
+#clickButton {}
 
 /*- -100 sekunder? -*/
 /*
@@ -166,15 +156,47 @@ select:hover {
     to   { transform : translateX(-100%); }
 } */
 /* https://codepen.io/adamlindqvist/pen/EaPeJg  */
-
-
 .pepparkaksdiv {
-	background-color: #CC231E;
-
+  background-color: #CC231E;
 }
-
 
 .till-pepparkakor {
-	display:none;
-
+  display: none;
 }
+
+.tab-header {
+  border: 1px solid gray;
+}
+
+.tab-header>* {
+  display: inline-block;
+  border: 1px solid lightgray;
+  padding: 0.2em 1em;
+}
+
+.tab-header>*:hover {
+  background-color: #FADBD8;
+}
+
+.tab-content {
+  border: 1px solid lightgray;
+  height: 100px;
+  position: relative;
+  background-color: #FFFFCC;
+}
+.tab-content > * {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.tab-content > *:first-child {
+	display: block;
+}
+
+.tab-header, .tab-content {
+  border-radius: 0;
+  width: 300px;
+}
+
+/*  */

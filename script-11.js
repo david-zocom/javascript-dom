@@ -14,6 +14,7 @@ function whenLoaded(event) {
 	ex1();
 	ex2();
 	ex3();
+	ex5();
 }  // whenLoaded
 
 
@@ -65,8 +66,23 @@ function ex3() {
 	}
 }
 
+function ex5() {
+	$('.tab-header > *').click(event => $('.tab-content > *').hide());
+	$('.tab-header > :first-child').click(event => {
+		$('.tab-content > :nth-child(1)').show();
+	});
+	$('.tab-header > :nth-child(2)').click(event => {
+		$('.tab-content > :nth-child(2)').show();
+	});
+	$('.tab-header > :nth-child(3)').click(event => {
+		$('.tab-content > :nth-child(3)').show();
+	});
+	// Vi kan förenkla ytterligare med hjälp av data-attribut
+	// https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
+}
 /*
-3a Gör en sida med två knappar. På den ena ska det stå "+1" och på den andra "-1". Sidan ska också visa ett tal. När man klickar på +1 respektive -1 ska talet ändras. Talet ska finnas i en global variabel som heter counterState.
-3b Gör en sida med två knappar. På den ena ska det stå "Start" och på den andra "Stopp". Stopp-knappen ska vara inaktiverad, använd element.disabled=true
-När man klickar på Start ska start-knappen inaktiveras och stopp-knappen aktiveras. När man klickar på Stopp ska det bli tvärtom
+5 Gör en sida med "flikar". Ett system med flikar är när man har två eller flera element (använd div) som finns på samma plats på sidan, men bara ett är synligt åt gången. Det ska finnas knappar eller andra element (minst ett per div) som man klickar på för att göra motsvarande element synligt.
+
+
+
 */
