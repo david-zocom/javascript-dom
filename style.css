@@ -1,9 +1,5 @@
 body {
-  /* background-image: url("https://i.kym-cdn.com/photos/images/original/001/332/955/58e.gif"); */
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  /* background-color: snow; */
-  /* color: lime; */
+
 }
 
 /* * {
@@ -27,11 +23,6 @@ h1 {
 
 /* div {
 	border: 10px solid gray;
-	border-radius: 2px;
-	padding: 4px;
-	margin-top: 4px;
-	margin-bottom: 4px;
-	border-radius: 20px;
 	background-color:lightblue;
 } */
 p {
@@ -63,10 +54,6 @@ p {
   /* animation: hej 5s linear 2s infinite alternate; */
 }
 
-ul, ol {
-  /*	font-size: 4rem */
-  color: #fff;
-}
 
 .off {
   height: 200px;
