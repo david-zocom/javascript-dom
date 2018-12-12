@@ -186,4 +186,11 @@ select:hover {
   width: 300px;
 }
 
+#ajaxResult {
+	border: 1px solid gray;
+	padding: 1em;
+	margin: 1em 0em;
+}
+
+
 /*  */
